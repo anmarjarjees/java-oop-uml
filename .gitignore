@@ -1,3 +1,9 @@
+# My file:
+my-notes.txt
+.vscode/
+bin/
+lib/
+
 # Compiled class file
 *.class
 
