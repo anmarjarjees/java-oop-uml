@@ -1,18 +1,12 @@
-package p08_interface;
+package p09_interface;
 
-/*
- * If we don't implement any method from the interface,
- * Java will throw this error:
- * "The type SeniorLevel must implement the inherited abstract method
- * PaymentCalculator.calculateGross()" 
- */
-public class SeniorLevel implements PaymentCalculator {
-    // Quick Fix with VScode will suggest to you to add the method calculateGross()
+public class JuniorLevel implements PaymentCalculator {
+
     @Override
     public double calculateGross(double hours) {
         // Initialization means providing a default value for a variable at the time of
         // declaration
-        double payRate = 40; // initialize the variable "payRate" with the value of $40
+        double payRate = 25; // initialize the variable "payRate" with the value of $25
         // 3. Hours x Pay Rate:
         double payPerWeek = hours * payRate;
 

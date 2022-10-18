@@ -1,4 +1,4 @@
-package p08_interface;
+package p09_interface;
 
 public class Main {
     public static void main(String[] args) {
