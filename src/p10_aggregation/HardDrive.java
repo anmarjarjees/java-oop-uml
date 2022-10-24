@@ -6,9 +6,9 @@ public class HardDrive {
     public String brand; // Seagate, Western Digital...
     public String size; // in GB or in TB
 
-    public HardDrive(String hdtype, String hdbrand, String hdsize) {
-        type = hdtype;
-        brand = hdbrand;
-        size = hdsize;
+    public HardDrive(String hdType, String hdBrand, String hdSize) {
+        type = hdType;
+        brand = hdBrand;
+        size = hdSize;
     }
 }

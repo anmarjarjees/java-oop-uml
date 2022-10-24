@@ -1,9 +1,38 @@
 package p01_classes;
 
-public class Car2 {
-    // Member Variables: data (Fields or Instance Variables)
-    // Member Variables: data
-    private String branName;
+/*
+ * Working with a class named "Car"
+ * An object is any entity that has:
+ * - state 
+ * - behavior
+ * 
+ * Example:
+ * Car is an object. It has
+ * States: sedan, 4-weal, white, etc...
+ * Behaviors: driving, braking, turn left, turn right, ... 
+ */
+public class Car {
+    /*
+     * Classes/(Objects) can have to members:
+     * 
+     * Varaibles (Class Fields): data that are associated with the class
+     * 
+     * Methods: The behaviour or the functionality of the class/object
+     * 
+     * Encapsulation:
+     * To keep all/some members hidden from the outside the object.
+     * Which means this member cannot be accessed outside the class itself
+     * we can do it using the keyword "private"
+     * 
+     * NOTE:
+     * Any class member (fields and method)
+     * are defaulted to be "public"
+     * if we don't specify the access modifier
+     */
+
+    // Member Variables: data (Instance Variables or Class Variables [static])
+    // NOTE: All these fields will be initialized to "null"
+    private String brandName;
     private int year;
     private String type;
     private String model;
@@ -17,9 +46,11 @@ public class Car2 {
      * - Doesn't have a return type as it doesn't return anything
      * - it's implicitly return a new instance (object) of a class
      */
-    public Car2(String branName, int year, String carType, String carModel) {
+
+    // Constructor for setting the values:
+    public Car(String branName, int year, String carType, String carModel) {
         // the "this" refer to the instance fields
-        this.branName = branName;
+        this.brandName = branName;
         this.year = year;
 
         // Notice: below no need to use the keyword "this"
@@ -28,10 +59,12 @@ public class Car2 {
         model = carModel;
     }
 
-    // Methods: functionality
+    // Methods: functionality:
+    public void getInfo() {
+        System.out.println(
+                "brandName: " + brandName + ". Year: " + year + " Car Type: " + type + ". Car Model: " + model);
+        // System.out.println(Car.carInfo());
 
-    void getInfo() {
-        System.out.println("Car2.carInfo()");
     }
 
     void moveForward() {
@@ -75,7 +108,7 @@ public class Car2 {
          * We can omit the user of "this" keyword
          */
         // return "Name is: " + this.name + " Fav Food: " + this.favFood;
-        return "BranName: " + branName + ". Year: " + year + " Car Type: " + type + ". Car Model: " + model;
+        return "BranName: " + brandName + ". Year: " + year + " Car Type: " + type + ". Car Model: " + model;
     }
 }
 

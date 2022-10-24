@@ -3,8 +3,8 @@ package p04_static_keyword;
 public class User {
     // Fields (attributes):
     // variables inside a class:
-    private String name;
-    private int age;
+    private String name; // null by default
+    private int age; // 0 by default
     // Practicing the keyword "static"
     // this will make appName belongs to the "User" class itself
     // and also make userId belongs to the "User" class itself
@@ -39,7 +39,7 @@ public class User {
         this.appName = appName;
     }
 
-    // Then adding a static method:
+    // Then adding a static method to return the total of users:
     public static int getUserTotal() {
         /*
          * As you see below, No complaining from Java about using this static field

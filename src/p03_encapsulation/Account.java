@@ -45,6 +45,9 @@ public class Account {
     // check the deposit method below:
     public void setBalance(double amount) {
         // we can make our program more robust by validating the user input
+        // add validation:
+        // if the balance <=0 output error message:
+        // else set the new value
         if (amount <= 0) {
             System.err.println("Invalid amount!");
         } else {
@@ -65,6 +68,10 @@ public class Account {
     }
 
     public void withdraw(double amount) {
+        /*
+         * 1. the amount should be more than 0
+         * 2. has enough balance
+         */
         if (amount <= 0) {
             System.err.println(amount + ". Invalid withdraw amount!");
         } else {

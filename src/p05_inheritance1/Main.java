@@ -16,7 +16,6 @@ public class Main {
          * Class,
          * we can use inheritance to inherit the features of Random class
          * then customize it to add a random letter method to it
-         * 
          */
         // System.out.println(random.letter()); // Error
 

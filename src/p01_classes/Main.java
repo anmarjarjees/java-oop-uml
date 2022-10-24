@@ -55,9 +55,9 @@ public class Main {
          * Age is 48
          */
 
-        // Then "Car2" class:
-        Car2 myCar = new Car2("Dodge", 2010, "SUV", "CXT");
-        Car2 johnCar = new Car2("Nissan", 2012, "Sedan", "Vista");
+        // Then "Car" class:
+        Car myCar = new Car("Dodge", 2010, "SUV", "CXT");
+        Car johnCar = new Car("Nissan", 2012, "Sedan", "Vista");
 
         myCar.getInfo();
         myCar.moveBackward();
