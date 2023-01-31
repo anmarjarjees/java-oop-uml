@@ -20,7 +20,7 @@ public class Car {
      * Methods: The behaviour or the functionality of the class/object
      * 
      * Encapsulation:
-     * To keep all/some members hidden from the outside the object.
+     * To keep all/some members hidden from the outside the class.
      * Which means this member cannot be accessed outside the class itself
      * we can do it using the keyword "private"
      * 
@@ -48,6 +48,8 @@ public class Car {
      */
 
     // Constructor for setting the values:
+    // Constructor Parameters: String branName, int year, String carType, String
+    // carModel
     public Car(String branName, int year, String carType, String carModel) {
         // the "this" refer to the instance fields
         this.brandName = branName;
@@ -63,27 +65,33 @@ public class Car {
     public void getInfo() {
         System.out.println(
                 "brandName: " + brandName + ". Year: " + year + " Car Type: " + type + ". Car Model: " + model);
+
+        /*
+         * in PHP :-)
+         * echo "<p>brandName $brandName</p>";
+         * echo "<p>brandName ".$brandName."</p>";
+         */
         // System.out.println(Car.carInfo());
 
     }
 
-    void moveForward() {
+    public void moveForward() {
 
     }
 
-    void moveBackward() {
+    public void moveBackward() {
 
     }
 
-    void turnRight() {
+    public void turnRight() {
 
     }
 
-    void turnLeft() {
+    public void turnLeft() {
 
     }
 
-    void stop() {
+    public void stop() {
 
     }
 
@@ -110,7 +118,7 @@ public class Car {
         // return "Name is: " + this.name + " Fav Food: " + this.favFood;
         return "BranName: " + brandName + ". Year: " + year + " Car Type: " + type + ". Car Model: " + model;
     }
-}
+} // end class file
 
 // Java will create a place in memory for this object
 // using the new keyword to initialize an object

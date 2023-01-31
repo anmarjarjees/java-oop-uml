@@ -138,8 +138,7 @@ You can learn more from this Oracle doc ["Using Package Members"](https://docs.o
 Please follow this order of the packages to learn the concepts step by step:
 - p01_classes
     - User.java (the anatomy of a class)
-    - Car1.java (the anatomy of a class)
-    - Car2.java (working with the Constructor method)
+    - Car.java (working with the Constructor method)
     - Person.java (working with the Constructor method)
     - Main.java
 - p02_classes_exercise

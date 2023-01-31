@@ -12,6 +12,10 @@ public class Member {
     }
 
     // Getter and Setter:
+    /*
+     * Getters => get the value of a class field
+     * Setters => set (assign) a value to a class field
+     */
 
     // getter
     public String getMemName() {
@@ -26,4 +30,10 @@ public class Member {
         // OR:
         return membershipType;
     }
+
+    @Override
+    public String toString() {
+        return memberName + " - " + membershipType;
+    }
+
 }

@@ -64,31 +64,36 @@ public class Account {
             // this.balance = this.balance + amount;
             // Or:
             this.balance += amount;
+            // Notice that you could omit the use of "this" keyword:
+            // balance += amount;
         }
     }
 
     public void withdraw(double amount) {
         /*
-         * 1. the amount should be more than 0
+         * Two conditions for withdrawing:
+         * 1. the amount to withdraw should be more than 0
          * 2. has enough balance
          */
         if (amount <= 0) {
             System.err.println(amount + ". Invalid withdraw amount!");
         } else {
+            // 1. check if the balance is 0 (no balance at all):
             if (this.balance == 0) {
                 System.err.println("Sorry your account balance is 0!");
             } else {
+                // 2. check if the balance is less than the wanted amount:
                 if (balance < amount) {
                     double shortage = amount - balance;
                     System.err.println(
                             "Sorry you don't have enough balance to withdraw $" + amount + ". Your current balance is $"
-                                    + this.balance + ". You are short with $" + shortage
+                                    + balance + ". You are short with $" + shortage
                                     + ". Transaction Failed");
                 } else {
                     this.balance -= amount;
-                    System.err.println("Your current balance after withdrawing $" + amount + " is " + this.balance);
+                    System.err.println("Your current balance after withdrawing $" + amount + " is " + balance);
                 }
             }
-        }
-    }
+        } // end main if/else
+    } // end withdraw()
 }

@@ -13,7 +13,7 @@ import java.util.List;
  * it is called loose coupling in Java
  * - Tight Coupling: When two classes are highly dependent on each other, it is called tight coupling
  * 
- * In Java environment, the less dependency we have between two classed is better for maintain, 
+ * In Java environment, the less dependency we have between two classes is better for maintain, 
  * updating and debugging, so "loose coupling" which is "GOOD" is better than "tight coupling" which is "BAD".
  */
 // Example of Tight (Bad) Coupling

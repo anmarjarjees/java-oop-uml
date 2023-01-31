@@ -9,7 +9,8 @@ public class User {
     /*
      * Constructor:
      * A method that are being called and triggered automatically when creating a
-     * new instance of a class
+     * new instance of a clas.
+	 * A default constructor that has no parameters
      */
 
     public User(String name) {
