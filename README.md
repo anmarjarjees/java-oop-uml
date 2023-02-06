@@ -113,7 +113,7 @@ To make types easier to find and use, to avoid naming conflicts, and to control 
 # Packages Naming Conventions
 Package names are written in all lower case to avoid conflict with the names of classes or interfaces.
 
-Companies use their reversed Internet domain name to begin their package names—for example, com.example.mypackage for a package named mypackage created by a programmer at example.com.
+Companies use their reversed Internet domain name to begin their package names — for example, com.example.mypackage for a package named mypackage created by a programmer at example.com.
 
 Packages in the Java language itself begin with java. or javax.
 

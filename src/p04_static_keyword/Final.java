@@ -10,8 +10,13 @@ public class Final {
         /*
          * The code below will generate this error
          * for the same reason as discussed before:
-         * Error: The method barking() is undefined for the type Dog
-         *
+         * Error:
+         * Cannot make a static reference to the non-static method barking()
+         * from the type Dog
+         */
+        // Dog.barking();
+
+        /*
          * Two Solutions:
          * 1) Change this method() to be "static" inside its original class as we saw
          * before
@@ -21,7 +26,8 @@ public class Final {
          * Dog dogy = new Dog();
          * then dogy.barking();
          * 
-         * OR you can use this way:
+         * OR:
+         * Use this way: Chaining the class method through the constructor
          * - Creating an new constructor and chaining to it the barking() method
          * immediately
          */
