@@ -109,6 +109,15 @@ public class Car {
      * in the superclass. If, for some reason, the compiler detects that the method
      * does not exist in one of the superclasses, then it will generate an error.
      * Link: https://docs.oracle.com/javase/tutorial/java/IandI/override.html
+	 
+	 also notice the annotation "override":
+	 - informs the compiler that the element is meant to override an element declared in a superclass. 
+	 - While it is not required to use this annotation when overriding a method, it helps to prevent errors. 
+	 If a method marked with @Override fails to correctly override a method in one of its superclasses, 
+	 the compiler generates an error.
+	 - If you don’t use theis annotation, 
+	 this  method will be treated as a new method in the subclass (rather than the overriding method).
+	 Link: https://docs.oracle.com/javase/tutorial/java/annotations/predefined.html
      */
     @Override
     public String toString() {

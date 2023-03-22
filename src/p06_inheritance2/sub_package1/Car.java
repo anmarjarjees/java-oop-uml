@@ -1,4 +1,4 @@
-package p06_inheritance2;
+package p06_inheritance2.sub_package1;
 
 /*
  * A class declaration for a MountainBike class that is a subclass of Bicycle:
@@ -17,7 +17,7 @@ package p06_inheritance2;
 public class Car extends Vehicle {
     /*
      * Car inherits all the fields and methods of Vehicle and adds the
-     * field seatHeight and a method to set it.
+     * field fuelType and purchaseYear
      */
     // Besides the three fields from the parent class:
     // the Car subclass adds two fields:
@@ -26,7 +26,7 @@ public class Car extends Vehicle {
 
     /*
      * You can write a subclass constructor that invokes the constructor of the
-     * superclass, either implicitly or by using the keyword "super"
+     * superclass by using the keyword "super"
      */
     // the MountainBike subclass has one constructor
     public Car(String brand, String type, String wheels, int year, String fuelType, int purchaseYear) {
@@ -53,7 +53,6 @@ public class Car extends Vehicle {
     public void getCarSpecs() {
         /*
          * First, we need to call the method "getVehicleInfo()" from the parent class
-         * 
          */
         getVehicleInfo();
         // Just adding our extra info:
@@ -80,4 +79,9 @@ public class Car extends Vehicle {
      * using the same method name "getRecord()"
      * so the program needs to know which version of the method to be used
      */
+
+    // another method for accessing a default property:
+    public void showStatus() {
+        // System.out.println("Status".);
+    }
 }

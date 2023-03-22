@@ -1,4 +1,4 @@
-package p06_inheritance2;
+package p06_inheritance2.sub_package1;
 
 /*
  *
@@ -14,29 +14,55 @@ public class Vehicle {
     private String type; // Sedan, SUV, Van, ..
     private String wheels; // front-wheels drive, ...
     private int year; // The make year
+
+    public String province = "Ontario";
+
     /*
      * To make any member (field/method) from the parent class
      * sharable with the child class, this member CANNOT be "private"
      * to solve this issue in OOP, two solution:
      * 1) we can set this field to be public, in such case the extended/sub class
-     * can access it. But it will also accessed from outside the class
+     * can access it. But it will also accessed from outside the class and the
+     * package!
      * and it's against the idea of "encapsulation"! so it's not the ideal solution
      * 
      * 2) we can use the keyword "protected",
-     * which means this member can be accessed
-     * from the child class or within the sub class but it cannot be accessed
-     * outside the super class or outside the sub class
-     * 
-     * so the access "protected" is only for the children of the parent class
+     * which means (based on JAVA) that this member can be accessed
+     * from the child class or within the sub class or within the same package but
+     * it cannot be accessed anywhere outside these 3 zones.
      * 
      * Below We set the "isPreOwned" instance field in Vehicle to a "protected"
      * access modifier.
-     * If it was set to private like the other fields,
-     * the driven "Car" class would not be able to access it.
+     * If it was set to "private" like the other fields,
+     * the subclass "Car" class would not be able to access it.
+     * 
+     * To read more:
+     * Link: https://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html
      */
     protected boolean isPreOwned = false;
 
-    // the Vehicle class has one constructor
+    /*
+     * IMPORTANT NOTE FOR REVIEWING:
+     * *****************************
+     * Any class we create is shipped with a default constructor
+     * (with no parameters) that implicitly being generated
+     * when we create a new object.
+     * 
+     * Adding (overloading) another/other constructor(s)
+     * will remove the default one
+     * 
+     * so if you extends this class, the subclass CANNOT be without a
+     * constructor,
+     * it must implement the same constructor from the parent class,
+     * OR you can redefine the default one explicitly in the superclass
+     * to make it available again,
+     * in such case no need to write the constructor in the subclass
+     */
+    // Default Constructor:
+    // public Vehicle() {
+    // }
+
+    // the Vehicle class has one custom constructor
     public Vehicle(String brand, String type, String wheels, int year) {
         this.brand = brand;
         this.type = type;
@@ -44,7 +70,7 @@ public class Vehicle {
         this.year = year;
     }
 
-    // the Bicycle class has four methods
+    // the Vehicle class has four methods
     public void StartDriving() {
         System.out.println("Start Driving");
     }
@@ -70,4 +96,4 @@ public class Vehicle {
         System.out.println("What to fix: " + fixPart);
         System.out.println("Total Cost: " + cost);
     }
-}
+} // end class

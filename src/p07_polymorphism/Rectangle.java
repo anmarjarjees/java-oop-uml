@@ -1,5 +1,9 @@
 package p07_polymorphism;
-
+/* 
+ * OOP => Polymorphism:
+ * - Overriding
+ * - Overloading 
+ */
 public class Rectangle extends Shape {
     // two values for length and height
     // value1 and value2 interchangeably (no difference)

@@ -9,8 +9,13 @@ public class User {
     /*
      * Constructor:
      * A method that are being called and triggered automatically when creating a
-     * new instance of a clas.
-	 * A default constructor that has no parameters
+     * new instance of a class.
+     * A default constructor that has no parameters
+     * 
+     * We can overload constructors like methods.
+     * The constructor overloading can be defined as the concept of having more than
+     * one constructor with different parameters
+     * so that every constructor can perform a different task.
      */
 
     public User(String name) {
