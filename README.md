@@ -1,6 +1,5 @@
 # java-oop-uml
-A friendly introduction to Object Oriented Programming with Java and using UML class diagram. It is not a beginning tutorial about Java programming fundamentals, or about how setup your projects, packages, working with files, etc. If you need any refreshment or if you are new to programming or new to Java language, please consider review [my repo "java-essentials"]().
-The main course topics and the major outlines were build based on the code logic and materials of the Software Engineer and Java Instructor at UC San Diego University "June Clarke". You can check [June Clarke GitHUb](https://github.com/joonspoon), and her own code examples about OOP with Java are can be found in this repo [this repo](https://github.com/joonspoon/madecraft-oop)
+A friendly introduction to Object Oriented Programming with Java and using UML class diagram. It is not a beginning tutorial about Java programming fundamentals, or about how setup your projects, packages, working with files, etc. If you need any refreshment or if you are new to programming or new to Java language, please consider review [my repo "java-essentials"](https://github.com/anmarjarjees/java-essentials).
 
 # Objects
 - Anything in our life is an object. Example from our real life: anything can be an object like a dog, a cat, a car, a pen, etc...
@@ -197,11 +196,13 @@ Continue the code files:
     - SeniorLevel.java
     - Main.java
 
+# Resources, References, and Credits:
+- "June Clarke": Software Engineer and Java Instructor at UC San Diego University
+You can check [June Clarke GitHUb](https://github.com/joonspoon), and her own code examples about OOP with Java are can be found in this repo [this repo](https://github.com/joonspoon/madecraft-oop)
 
+- Java How to Program, 11/e, Early Objects Version by [Paul Deitel (Author)] (https://deitel.com/about/), Harvey Deitel (Author):
 
-
-
-
+- CORE Java Volume 1: Fundamentals by [Cay S. Horstmann](https://horstmann.com/)
 
     
 
